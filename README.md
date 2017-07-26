@@ -14,6 +14,7 @@ t2 run index.js
 
 ![icon](imgs/accelerometer.jpg)
 
+
 ### /ambient
 
 Reports the light and sound levels using the [ambient module](https://github.com/tessel/ambient-attx4).  To run this snippet, attach the Ambient sensor to Port A of your Tessel.  Then simply do:
