@@ -27,16 +27,24 @@ t2 run index.js
 ![icon](imgs/ambient.jpg)
 
 ### /climate
-Description: Reports the temperature and humidity using the climate module.
+
+Reports the temperature and humidity using the [climate module](https://github.com/tessel/climate-si7020).  To run this snippet, attach the Climate sensor to Port A of your Tessel.  Then simply do:
+
+````
+cd climate
+npm install
+t2 run index.js
+````
 
 ![icon](imgs/climate.jpg)
 
 ### /drone
 
-![icon](imgs/dronecargo.jpg)
-Figure T: Loading a Tessel onto a mini-drone as sensor cargo (using tape and legos).
+Loading a Tessel onto a mini-drone as sensor cargo (using tape and legos).
 
-## Command Linkd Interface (CLI) Snippets 
+![icon](imgs/dronecargo.jpg)
+
+## Command Line Interface (CLI) Snippets 
 
 Below are various __t2-cli__ snippets when working with the Tessel micro-controller.
 
