@@ -87,7 +87,7 @@ ts list
 ````
 Confirm that you see a 'LAN' connection.
 
-### How do I set up my Tessel so I can push code to it?
+#### How do I set up my Tessel so I can push code to it?
 
 For first time setup, in Termsinal do:
 
@@ -97,7 +97,7 @@ t2 provision
 
 That's it, you're good.
 
-### How do I create a new Tessel Project?
+#### How do I create a new Tessel Project?
 
 In Terminal, do: 
 
@@ -109,7 +109,7 @@ t2 init
 
 Proceed to hack.
 
-### How do I run my Tessel Project?
+#### How do I run my Tessel Project?
 
 In Terminal, do:
 
@@ -120,6 +120,6 @@ t2 run index.js
 
 This repo includes a variety of sample projects - most require various Tessel modules/sensors.  So first attach then run!
 
-### How do I stop running my Tessel Project?
+#### How do I stop running my Tessel Project?
 
 On your keyboard do: [Control] + [C]
