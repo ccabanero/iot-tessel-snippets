@@ -4,7 +4,7 @@ Various adventures hacking with the [Tessel 2](https://tessel.io) IoT Developmen
 
 ### /accelerometer
 
-Reports the x, y, z data using the [accelerometer module](https://tessel.io/modules#module-accelerometer).  To run this snippet, attach the Accelerometer sensor to Port A of your Tessel.  Then simply do:
+Reports the x, y, z data using the [accelerometer module](https://github.com/tessel/accel-mma84).  To run this snippet, attach the Accelerometer sensor to Port A of your Tessel.  Then simply do:
 
 ````
 cd accelerometer
@@ -15,7 +15,14 @@ t2 run index.js
 ![icon](imgs/accelerometer.jpg)
 
 ### /ambient
-Description: Reports the light and sound level using the ambient module.
+
+Reports the light and sound levels using the [ambient module](https://github.com/tessel/ambient-attx4).  To run this snippet, attach the Ambient sensor to Port A of your Tessel.  Then simply do:
+
+````
+cd ambient
+npm install
+t2 run index.js
+````
 
 ![icon](imgs/ambient.jpg)
 
