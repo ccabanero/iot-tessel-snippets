@@ -57,7 +57,6 @@ Below are various __t2-cli__ snippets when working with the Tessel micro-control
 
 ````
 npm install -g t2-cli
-
 ````
 
 #### How do I connect to my Tessel micro-controller via USB?
