@@ -31,12 +31,14 @@ Description: Reports the temperature and humidity using the climate module.
 
 ![icon](imgs/climate.jpg)
 
+### /drone
+
+![icon](imgs/dronecargo.jpg)
+Figure T: Loading a Tessel onto a mini-drone as sensor cargo (using tape and legos).
+
 ## Command Linkd Interface (CLI) Snippets 
 
 Below are various __t2-cli__ snippets when working with the Tessel micro-controller.
-
-![icon](imgs/dronecargo.jpg)
-Figure: Loading a Tessel onto drone as cargo (using tape and legos)
 
 #### What do I need to do to get my Development Environment set up?
 
@@ -107,7 +109,7 @@ cd MyProjectFolder
 t2 run index.js
 ````
 
-This repo includes a variety of sample projects - most require various Tessel modules/sensors.
+This repo includes a variety of sample projects - most require various Tessel modules/sensors.  So first attach then run!
 
 ### How do I stop running my Tessel Project?
 
