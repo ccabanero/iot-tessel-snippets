@@ -39,12 +39,12 @@ t2 run index.js
 
 ![icon](imgs/climate.jpg)
 
-### /camera
+### /camera-clap
 
-Takes a photo and hosts the photo on the Tessel over HTTP.  To run this sample attach an external [USB camera](https://www.amazon.com/gp/product/B0092QJRPC/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1) to any of the USB ports on the Tessel.  Then simply do:
+Turns on the camera after you 'clap your hands' and hosts the camera output over HTTP using the Tessel as a web server.  To run this sample, attach the Ambient sensor to Port A of your Tessel.  Then attach an external [USB camera](https://www.amazon.com/gp/product/B0092QJRPC/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1) to any of the USB ports on the Tessel.  Then simply do:
 
 ````
-cd camera
+cd camera-clap
 npm install
 t2 run index.js
 ````
