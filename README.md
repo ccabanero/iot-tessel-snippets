@@ -53,13 +53,13 @@ Below are various __t2-cli__ snippets when working with the Tessel micro-control
 
 1) Install [Nodejs](https://nodejs.org/en/) 4.2.x or greater.
 
-2) In Terminal, install the Tessel 2 Command Line Interface (CLI) by doing: 
+2) In Terminal, install the Tessel 2 Command Line Interface (CLI) with: 
 
 ````
 npm install -g t2-cli
 ````
 
-#### How do I connect to my Tessel micro-controller via USB?
+#### How do I connect to my Tessel via USB?
 
 1) Plug in the Tessel 2 board to your computer via the provided micro-USB cable.
 
@@ -71,34 +71,31 @@ t2 list
 
 In Terminal, confirm that you see a 'USB' connection reporting your Tessel board's identifier. 
 
-#### How do I connect to my Tessel micro-controller via Wifi (2.4 GHz networks)?
+#### How do I connect to my Tessel via Wifi (2.4 GHz networks)?
 
-For first time setup, in Terminal do: 
+In Terminal, connect to a wifi network with: 
 
 ````
 t2 wifi -n <EnterNetworkName> -p <EnterPassword>
 ````
 
-Confirm with: 
+Confirm that when you connect, you see a 'LAN' connection listed with:
 
 ````
-ts list
+t2 list
 ````
-Confirm that you see a 'LAN' connection.
 
 #### How do I set up my Tessel so I can push code to it?
 
-For first time setup, in Termsinal do:
+In Terminal, set up for pushing code with:
 
 ````
 t2 provision
 ````
 
-That's it, you're good.
-
 #### How do I create a new Tessel Project?
 
-In Terminal, do: 
+Create a new project with basic scaffolding with:
 
 ````
 mkdir MyProjectFolder
@@ -106,18 +103,14 @@ cd mkdir
 t2 init
 ````
 
-Proceed to hack.
-
 #### How do I run my Tessel Project?
 
-In Terminal, do:
+In Terminal, run a project with:
 
 ````
 cd MyProjectFolder
 t2 run index.js
 ````
-
-This repo includes a variety of sample projects - most require various Tessel modules/sensors.  So first attach then run!
 
 #### How do I stop running my Tessel Project?
 
