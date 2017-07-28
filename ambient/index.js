@@ -1,12 +1,8 @@
-// Import the interface to Tessel hardware
-var tessel = require('tessel');
-var ambientlib = require('ambient-attx4');
-
-var ambient = ambientlib.use(tessel.port['A']);
+const tessel = require('tessel');
+const ambientlib = require('ambient-attx4');
+const ambient = ambientlib.use(tessel.port['A']);
 
 ambient.on('ready', function(){
-
-  // get light and sound levels
   setInterval(function(){
     ambient.getLightLevel(function(err, lightdata){
       if (err) throw err;

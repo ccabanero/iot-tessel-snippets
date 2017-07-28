@@ -41,7 +41,7 @@ t2 run index.js
 
 ### /camera-clap
 
-Turns on the camera after you 'clap your hands' and hosts the camera output over HTTP using the Tessel as a web server.  To run this sample, attach the Ambient sensor to Port A of your Tessel.  Then attach an external [USB camera](https://www.amazon.com/gp/product/B0092QJRPC/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1) to any of the USB ports on the Tessel.  Then simply do:
+Turns on the camera after you 'clap your hands' and hosts the captured camera frame [(see tessel-av)](https://github.com/tessel/tessel-av) over HTTP using the Tessel as a web server.  To run this sample, attach the Ambient sensor to Port A of your Tessel.  Then attach an external [USB camera](https://www.amazon.com/gp/product/B0092QJRPC/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1) to any of the USB ports on the Tessel.  Then simply do:
 
 ````
 cd camera-clap
@@ -69,7 +69,7 @@ Loading a Tessel onto a mini-drone as sensor cargo (using tape and legos).
 
 ![icon](imgs/dronecargo.jpg)
 
-## Command Line Interface (CLI) Snippets 
+## Command Line Interface Snippets 
 
 Below are various __t2-cli__ snippets when working with the Tessel micro-controller.
 
@@ -77,7 +77,7 @@ Below are various __t2-cli__ snippets when working with the Tessel micro-control
 
 1) Install [Nodejs](https://nodejs.org/en/) 4.2.x or greater.
 
-2) In Terminal, install the Tessel 2 Command Line Interface (CLI) with: 
+2) In Terminal, install the Tessel 2 Command Line Interface [(t2-cli)](https://github.com/tessel/t2-cli) with: 
 
 ````
 npm install -g t2-cli
