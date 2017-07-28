@@ -35,7 +35,7 @@ ambient.on('error', function(err){
  * @returns {boolean}
  */
 function soundIsAboveThreshold(soundData) {
-  const targetSoundThreshold = 0.02;
+  const targetSoundThreshold = 0.10;
   return (soundData > targetSoundThreshold);
 }
 
