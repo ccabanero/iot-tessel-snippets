@@ -2,12 +2,16 @@
 const tessel = require('tessel');
 const ambientlib = require('ambient-attx4');
 const ambient = ambientlib.use(tessel.port['A']);
-// for camera
+// for camera and hosting photo
 const av = require('tessel-av');
 const os = require('os');
 const http = require('http');
+
 const port = 8000;
 const camera = new av.Camera();
+
+// testing the av API
+console.log('camera dimensions: ', camera.dimensions);
 
 ambient.on('ready', function() {
     var refreshId = setInterval(function() {
@@ -16,7 +20,7 @@ ambient.on('ready', function() {
         console.log('sound data is: ', soundData);
         if (soundIsAboveThreshold(soundData)) {
           clearInterval(refreshId);
-          turnOnCamera();
+          capturePhotoAndHost();
         }
       });
     }, 200);
@@ -30,7 +34,7 @@ ambient.on('error', function(err){
 });
 
 /**
- * Utility to evaluate if the ambient sensor data has past a target threshold
+ * Utility to evaluate if the ambient sensor data has past a target threshold.
  * @param soundData
  * @returns {boolean}
  */
@@ -40,11 +44,12 @@ function soundIsAboveThreshold(soundData) {
 }
 
 /**
- * For turning on the camera and presenting URL for viewing photo capture
+ * For capturing a camera frame and presenting URL for viewing photo.
  */
-function turnOnCamera() {
+function capturePhotoAndHost() {
   http.createServer((request, response) => {
     response.writeHead(200, { 'Content-Type': 'image/jpg' });
-    camera.capture().pipe(response);
+    const frame = camera.capture();
+    frame.pipe(response);
   }).listen(port, () => console.log(`View camera at: http://${os.hostname()}.local:${port}`));
 }
