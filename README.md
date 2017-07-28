@@ -48,7 +48,20 @@ cd camera-clap
 npm install
 t2 run index.js
 ````
+
 ![icon](imgs/camera.jpg)
+
+### /camera-stream
+
+The camera streams to a web page hosted on the Tessel.  To run this sample, attach an external USB camera to the Tessel then do:
+
+````
+cd camera-stream
+npm install
+t2 run index.js
+````
+
+![icon](imgs/camera-stream.png)
 
 ### /drone
 
