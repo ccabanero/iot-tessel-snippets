@@ -39,6 +39,18 @@ t2 run index.js
 
 ![icon](imgs/climate.jpg)
 
+### /gps-storage
+
+Collects location and stores the coordinates & altitude to a [USB Flash drive](https://www.amazon.com/gp/product/B00812F7O8/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1).  To run this sample, attach the [gps module](https://github.com/tessel/gps-a2235h) to Port A of the Tessel.  Also connect a USB flash drive.  Then simply do:
+
+```` 
+cd gps-storage 
+npm install
+t2 run index.js
+````
+
+![icon](imgs/gps.jpg)
+
 ### /camera-clap
 
 Turns on the camera after you 'clap your hands' and hosts the captured camera frame [(see tessel-av)](https://github.com/tessel/tessel-av) over HTTP using the Tessel as a web server.  To run this sample, attach the Ambient sensor to Port A of your Tessel.  Then attach an external [USB camera](https://www.amazon.com/gp/product/B0092QJRPC/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1) to any of the USB ports on the Tessel.  Then simply do:
@@ -109,7 +121,7 @@ Confirm that when you connect, you see a 'LAN' connection listed with:
 t2 list
 ````
 
-#### How do I set up my Tessel so I can push code to it?
+#### How do I set up my Tessel so I can push code to it via Wifi?
 
 In Terminal, set up for pushing code with:
 
