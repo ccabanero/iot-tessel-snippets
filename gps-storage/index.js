@@ -17,14 +17,14 @@ gps.on('ready', function(){
   });
 
   gps.on('coordinates', function(coords){
-      const coordinateText = 'Latitude: ' + coords.lat + ' Longitude: ' + coords.lon;
+    const coordinateText = 'Latitude: ' + coords.lat + ' Longitude: ' + coords.lon;
     fs.appendFile(filepath, coordinateText, function() {
         console.log('added to text file: ',  coordinateText);
     })
   });
 
   gps.on('altitude', function (alt) {
-      const altitudeText = 'Altidue: ' + alt.alt + ' meters';
+    const altitudeText = 'Altidue: ' + alt.alt + ' meters';
     fs.appendFile(filepath, altitudeText, function() {
         console.log('added to text file: ', altitudeText);
     });

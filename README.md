@@ -4,7 +4,7 @@ Various adventures hacking with the [Tessel 2](https://tessel.io) IoT Developmen
 
 ### /accelerometer
 
-Reports the x, y, z data using the [accelerometer module](https://github.com/tessel/accel-mma84).  To run this snippet, attach the Accelerometer sensor to Port A of your Tessel.  Then simply do:
+Collects x, y, z data using the [accelerometer module](https://github.com/tessel/accel-mma84) and saves the data to a USB flash drive via the __fs__ module.  To run this snippet, attach the Accelerometer sensor to Port A of your Tessel.  Then simply do:
 
 ````
 cd accelerometer
