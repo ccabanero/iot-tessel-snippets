@@ -75,6 +75,18 @@ t2 run index.js
 
 ![icon](imgs/camera-stream.png)
 
+### /audio-playMP3
+
+The Tessel plays an mp3 file.  To run this sample, attach an [external USB Sound Adapter](https://www.amazon.com/gp/product/B00IRVQ0F8/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00IRVQ0F8&linkCode=as2&tag=tessproj-20&linkId=4GTXEWAVEW5KGE5V) to the Tessel.  Then, attach a speaker using the 3.5 mm headphone jack to the USB Sound Adapter.  Then simply do:
+
+```` 
+cd audio-playMP3
+npm install
+t2 run index.jst
+````
+
+![icon](imgs/audio-mp3.jpg)
+
 ### /drone
 
 Loading a Tessel onto a mini-drone as sensor cargo (using tape and legos).
