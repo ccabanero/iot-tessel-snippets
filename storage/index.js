@@ -1,3 +1,4 @@
+'use strict';
 const fs = require('fs');
 const path = require('path');
 const mountPoint = '/mnt/sda1'; // the first flash drive plugged in

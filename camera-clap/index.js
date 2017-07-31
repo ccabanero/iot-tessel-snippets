@@ -1,7 +1,10 @@
+'use strict';
+
 // for ambient sensor
 const tessel = require('tessel');
 const ambientlib = require('ambient-attx4');
 const ambient = ambientlib.use(tessel.port['A']);
+
 // for camera and hosting photo
 const av = require('tessel-av');
 const os = require('os');
@@ -9,10 +12,6 @@ const http = require('http');
 
 const port = 8000;
 const camera = new av.Camera();
-
-// testing the av API
-console.log('camera dimensions: ', camera.dimensions);
-
 ambient.on('ready', function() {
     var refreshId = setInterval(function() {
       ambient.getSoundLevel(function(err, soundData) {

@@ -1,3 +1,4 @@
+'use strict';
 const tessel = require('tessel');
 const ambientlib = require('ambient-attx4');
 const ambient = ambientlib.use(tessel.port['A']);

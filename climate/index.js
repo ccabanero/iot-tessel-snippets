@@ -1,3 +1,4 @@
+'use strict';
 const tessel = require('tessel');
 const climatelib = require('climate-si7020');
 const climate = climatelib.use(tessel.port['A']);
