@@ -41,7 +41,7 @@ t2 run index.js
 
 ### /gps-storage
 
-Collects location and stores the coordinates & altitude to a [USB Flash drive](https://www.amazon.com/gp/product/B00812F7O8/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1).  To run this sample, attach the [gps module](https://github.com/tessel/gps-a2235h) to Port A of the Tessel.  Also connect a USB flash drive.  Then simply do:
+Collects location & altitude from the GPS module and saves the data to a [USB Flash drive](https://www.amazon.com/gp/product/B00812F7O8/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1).  To run this sample, attach the [gps module](https://github.com/tessel/gps-a2235h) to Port A of the Tessel.  Also connect a USB flash drive.  Then simply do:
 
 ```` 
 cd gps-storage 

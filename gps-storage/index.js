@@ -12,38 +12,37 @@ const gps = gpsLib.use(tessel.port['A']);
 gps.on('ready', function(){
 
   const readyStatusText = 'GPS module powered and ready. waiting for satellites...';
-  fs.writeFile(filepath, readyStatusText, function() {
+  fs.appendFile(filepath, readyStatusText, function() {
       console.log(readyStatusText);
   });
 
   gps.on('coordinates', function(coords){
       const coordinateText = 'Latitude: ' + coords.lat + ' Longitude: ' + coords.lon;
-    fs.writeFile(filepath, coordinateText, function() {
+    fs.appendFile(filepath, coordinateText, function() {
         console.log('added to text file: ',  coordinateText);
     })
   });
 
   gps.on('altitude', function (alt) {
       const altitudeText = 'Altidue: ' + alt.alt + ' meters';
-    fs.writeFile(filepath, altitudeText, function() {
+    fs.appendFile(filepath, altitudeText, function() {
         console.log('added to text file: ', altitudeText);
     });
   });
 
   gps.on('fix', function (data) {
     let fixTest = 'Number of satellites fixed: ' + data.numSat;
-    fs.writeFile(filepath, fixTest, function() {
+    fs.appendFile(filepath, fixTest, function() {
         console.log('added to text file: ', fixTest);
     });
   });
 
   gps.on('dropped', function(){
     const dropText = 'GPS signal dropped';
-    fs.writeFile(filepath, dropText, function() {
+    fs.appendFile(filepath, dropText, function() {
         console.log('added to text file: ', dropText);
     });
   });
-
 });
 
 gps.on('error', function(err) {
