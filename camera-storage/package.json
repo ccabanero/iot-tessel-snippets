@@ -1,5 +1,5 @@
 {
-  "name": "storage",
+  "name": "camera-storage",
   "version": "0.0.0",
   "description": "Tessel project",
   "main": "index.js",
@@ -11,5 +11,8 @@
     "Tessel"
   ],
   "license": "MIT",
-  "readme": "A bare bones Tessel 2 blinky script."
+  "readme": "A bare bones Tessel 2 blinky script.",
+  "dependencies": {
+    "tessel-av": "^0.19.0"
+  }
 }
