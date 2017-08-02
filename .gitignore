@@ -5,6 +5,9 @@
 /.public.key
 /.pem
 /.key
+Tessel2-Boba.cert.pem
+Tessel2-Boba.private.key
+Tessel2-Boba.public.key
 
 # dependencies
 /node_modules
