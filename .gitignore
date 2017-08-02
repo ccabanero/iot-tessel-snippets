@@ -3,6 +3,8 @@
 /.cert.pem
 /.private.key
 /.public.key
+/.pem
+/.key
 
 # dependencies
 /node_modules
