@@ -1,4 +1,9 @@
 
+#aws iot connect device packages
+/.cert.pem
+/.private.key
+/.public.key
+
 # dependencies
 /node_modules
 node_modules/
