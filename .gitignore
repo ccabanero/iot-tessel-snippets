@@ -1,14 +1,4 @@
 
-#aws iot connect device packages
-/.cert.pem
-/.private.key
-/.public.key
-/.pem
-/.key
-Tessel2-Boba.cert.pem
-Tessel2-Boba.private.key
-Tessel2-Boba.public.key
-
 # dependencies
 /node_modules
 node_modules/
@@ -33,6 +23,11 @@ node_modules/
 npm-debug.log
 testem.log
 /typings
+
+#aws iot connect device packages
+Tessel2-Boba.cert.pem
+Tessel2-Boba.private.key
+Tessel2-Boba.public.key
 
 # System Files
 .DS_Store
